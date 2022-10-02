@@ -1,18 +1,4 @@
-.page {
-    background-color: aquamarine;
-    padding: 1rem;
-}
-
-.topContainer {
-    height: 30rem;
-    width: 70rem;
+.mainImg {
     background: url(./assets/laundryroom.png);
-}
-
-.rsContainer {
-    margin-top: 3rem;
-}
-
-.washerImg {
-    width: 30rem;
+    min-height: 31rem;
 }
