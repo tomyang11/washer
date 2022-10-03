@@ -2,3 +2,11 @@
     background: url(./assets/laundryroom.png);
     min-height: 31rem;
 }
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+}
