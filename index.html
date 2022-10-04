@@ -21,16 +21,25 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Research and Observation</a>
+                <a class="nav-link" href="#Intro">Introduction</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Personas</a>
+                <a class="nav-link" href="#QandA">Interview Questions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Storyboard</a>
+                <a class="nav-link" href="#Sketches">Component Sketches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Observations">Key Observations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Personas">Personas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Storyboard">Storyboard</a>
               </li>
             </ul>
           </div>
@@ -40,32 +49,34 @@
       <!-- Body Page -->
       <div class="m-0 bg-emerald-600">
         <!-- Main Image -->
-        <div class="mainImg flex justify-center items-center">
-            <div class="bg-yellow-400 flex justify-center items-center p-5 rounded-xl font-bold text-3xl">
-                Brown University Washing Machine
+        <div id="Home" class="mainImg flex justify-center items-center">
+            <div class="bg-yellow-400 flex justify-center items-center p-3 rounded-xl font-bold text-3xl">
+                <div class="flex justify-center items-center p-5 rounded-lg border-solid border-4 border-black">
+                    Brown University Washing Machine
+                </div>
             </div>
         </div>
-        <!-- Research and Observations -->
-        <div class="bg-yellow-400 flex flex-col justify-start items-center py-5 font-bold text-2xl">
-            Research and Observations
+        <!-- Introduction -->
+        <div id="Intro" class="bg-yellow-400 flex flex-col justify-start items-center py-5 font-bold text-4xl">
+            Introduction
             <div class="flex flex-row justify-between items-center p-3 mt-5 w-4/5">
                 <div>
                     <img src="./assets/washer.png" class="w-96" />
                 </div>
-                <div class="flex flex-col w-2/5">
+                <div class="flex flex-col justify-start w-2/5">
                     <h2 class="py-2">Why examine the washing machine?</h2>
-                    <ul class="text-sm font-normal list-disc leading-9">
-                        <li>It's a public interface shared by all students of a dorm</li>
-                        <li>It contains multiple moving parts that require different types of interactions (button, handles, trays, etc.)</li>
-                        <li>It's used differently by each person, depending on their preferences (detergent, pod, frequency)</li>
-                        <li>A single machine can be used by multiple people at once during turnovers</li>
+                    <ul class="text-base font-normal leading-9 my-4">
+                        <li><strong>-</strong> It's a public interface shared by all students of a dorm</li>
+                        <li><strong>-</strong> It contains multiple moving parts that require different types of interactions (button, handles, trays, etc.)</li>
+                        <li><strong>-</strong> It's used differently by each person, depending on their preferences (detergent, pod, frequency)</li>
+                        <li><strong>-</strong> A single machine can be used by multiple people at once during turnovers</li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- Questions & Responses -->
-        <div class="bg-yellow-50 flex flex-col justify-start p-5">
-            <h2 class="pb-5 text-center font-bold text-2xl">User Interview Questions and Responses</h2>
+        <div id="QandA" class="bg-yellow-50 flex flex-col justify-start p-5">
+            <h2 class="pb-5 text-center font-bold text-4xl">User Interview Questions and Responses</h2>
             <div class="accordion" id="accordionExample">
                 <!-- Item #1 -->
                 <div class="accordion-item">
@@ -182,8 +193,8 @@
             </div>
         </div>
         <!-- Interface Components Carousel -->
-        <div class="bg-yellow-400 p-5 flex flex-col justify-center items-center">
-            <h2 class="pb-5 font-bold text-2xl">Key Interface Components</h2>
+        <div id="Sketches" class="bg-yellow-400 p-5 flex flex-col justify-center items-center">
+            <h2 class="pb-5 font-bold text-4xl">Key Interface Components</h2>
             <div id="carouselExampleIndicators" class="carousel slide w-3/4" data-bs-ride="true">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -207,10 +218,10 @@
               </div>
         </div>
         <!-- Observations -->
-        <div class="flex flex-col justify-center bg-yellow-50 py-4">
-            <h2 class="font-bold text-2xl text-center">Key Observations</h2>
-            <div class="flex flex-row justify-evenly items-center my-4">
-                <div class="m-1 rounded-xl bg-yellow-400 px-5 py-3 w-1/3">
+        <div id="Observations" class="flex flex-col justify-center bg-yellow-50 py-5">
+            <h2 class="font-bold text-4xl text-center">Key Observations</h2>
+            <div class="flex flex-row justify-evenly items-center mt-5 pb-3">
+                <div class="m-1 rounded-xl bg-yellow-400 px-5 py-3 w-1/3 min-h-full">
                     <h2 class="py-2 font-semibold text-xl">Preparation</h2>
                     <ul class="text-sm font-normal list-disc leading-9">
                         <li>Students do laundry when they also have other work to do so they can maximize waiting time, often on afternoons.</li>
@@ -218,7 +229,7 @@
                         <li>If none are available, students tend not to go down again for 15-30 min longer than the displayed time-left.</li>
                     </ul>
                 </div>
-                <div class="m-1 rounded-xl bg-yellow-400 px-5 py-3 w-1/3">
+                <div class="m-1 rounded-xl bg-yellow-400 px-5 py-3 w-1/3 min-h-full">
                     <h2 class="py-2 font-semibold text-xl">Engagement</h2>
                     <ul class="text-sm font-normal list-disc leading-9">
                         <li>Order of operations: loads washer, insert pod (with clothes) or detergent (in tray), configures preferences, sets timer on personal phone.</li>
@@ -228,33 +239,35 @@
                 </div>
             </div>
         </div>
-        <!-- ADD Personas HERE -->
-        <div class="flex flex-col justify-center py-4 px-5 bg-yellow-400">
-            <h2 class="font-bold text-2xl text-center">Personas</h2>
-            <div class="flex justify-evenly items-center p-2 my-4 bg-yellow-50 rounded-xl">
-                <div class="flex flex-col justify-evenly items-center w-1/3 bg-emerald-600">
+        <!-- Personas -->
+        <div id="Personas" class="flex flex-col justify-center p-5 bg-yellow-400">
+            <h2 class="font-bold text-4xl text-center">Personas</h2>
+            <div class="flex justify-evenly items-center p-4 my-5 bg-yellow-50 rounded-xl">
+                <div class="flex flex-col justify-evenly items-center w-1/3">
                     <img src="./assets/ian.png" class="w-40 my-2" />
                     <h3 class="m-2 font-bold text-xl">Impatient Ian</h3>
-                    <p class="mb-2">
-                        Impatient Ian is a busy junior taking 5 courses and applying for internships. He has waited to do his laundry for 2 weeks and is now 
-                        out of clothes so he must do his wash so he has something to wear for his interview tomorrow.
+                    <p class="my-2">
+                        Impatient Ian is a busy junior taking 5 courses and applying for internships. He has not done his laundry in 2 weeks and is now 
+                        out of clothes. He must do his wash so he has clothes for his interview tomorrow.
                     </p>
                 </div>
+                <img src="./assets/IanEmpathyMap.png" class="w-200" />
             </div>
             <div class="flex justify-evenly items-center p-2 my-4 bg-yellow-50 rounded-xl">
-                <div class="flex flex-col justify-evenly items-center w-1/3 bg-emerald-600">
+                <div class="flex flex-col justify-evenly items-center w-1/3">
                     <img src="./assets/fred.png" class="w-40 my-2" />
                     <h3 class="m-2 font-bold text-xl">Freshman Fred</h3>
-                    <p class="mb-2">
+                    <p class="my-2">
                         Freshman Fred is a freshman doing laundry for the first time on campus. In fact, it is his first time doing laundry ever because his 
                         mom did his laundry when he was in high school.
                     </p>
                 </div>
+                <img src="./assets/FredEmpathyMap.png" class="w-200" />
             </div>
         </div>
         <!-- Storyboard -->
-        <div class="flex flex-col justify-center bg-yellow-50 py-4">
-            <h2 class="font-bold text-2xl text-center">Impatient Ian's Laundry Experience</h2>
+        <div id="Storyboard" class="flex flex-col justify-center bg-yellow-50 py-5">
+            <h2 class="font-bold text-4xl text-center">Impatient Ian's Laundry Experience</h2>
             <div class="flex flex-row flex-wrap justify-evenly items-center">
                 <div class="frame">
                     <img src="./assets/sb1.JPEG" class="p-5 w-full" alt="A student named Ian sitting at his desk" />
